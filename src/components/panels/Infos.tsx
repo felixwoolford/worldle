@@ -148,6 +148,17 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           )
         </div>
         <div>
+        Modded by{" "}
+          <a
+            className="underline"
+            href="https://github.com/felixwoolford"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Felix
+          </a>
+        </div>
+        <div>
           Want to support?{" "}
           <a
             className="underline"
@@ -156,7 +167,7 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             rel="noopener noreferrer"
           >
             <Twemoji
-              text="Buy me a coffee! ☕"
+              text="Buy teuteuf a coffee! ☕"
               options={{ className: "inline-block" }}
             />
           </a>
