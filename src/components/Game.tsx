@@ -23,6 +23,10 @@ import { getDayString, useCountry } from "../hooks/useCountry";
 import { Twemoji } from "@teuteuf/react-emoji-render";
 
 const MAX_TRY_COUNT = 6;
+var dayString = Math.random()
+        .toString(36)
+        .replace(/[^a-z]+/g, '')
+        .substr(0, 5);
 
 interface GameProps {
   settingsData: SettingsData;
@@ -30,7 +34,6 @@ interface GameProps {
 
 export function Game({ settingsData }: GameProps) {
   const { t, i18n } = useTranslation();
-  const dayString = useMemo(getDayString, []);
 
   const countryInputRef = useRef<HTMLInputElement>(null);
 
